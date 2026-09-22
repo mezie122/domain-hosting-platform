@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Domainly makes domains and hosting simple." />
+    <title>Domainly — Domains made simple</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement"><span>✦</span> Launch your next idea with a free .site domain on annual hosting plans. <a href="#plans">View plans →</a></div>
+    <header class="nav-wrap">
+      <nav class="nav container">
+        <a class="brand" href="#top"><span class="brand-mark">D</span><span>domainly</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <div class="nav-links"><a href="#domains">Domains</a><a href="#plans">Hosting</a><a href="#why">Why Domainly</a><a href="#support">Support</a></div>
+        <div class="nav-actions"><button class="text-button" id="loginBtn">Log in</button><button class="button button-small" id="signupBtn">Get started <span>↗</span></button><button class="cart-button" id="cartBtn" aria-label="Open cart">Bag <b id="cartCount">0</b></button></div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> Your home on the internet</div><h1>Build something<br /><em>worth visiting.</em></h1><p class="hero-sub">Find your perfect domain, launch faster, and keep everything you need in one beautifully simple place.</p><div class="hero-actions"><a class="button" href="#domains">Find your domain <span>→</span></a><a class="play-link" href="#why"><span class="play">▶</span> See how it works</a></div><div class="trust-row"><div class="avatars"><i>AM</i><i>JS</i><i>RK</i><i>+5k</i></div><span>Loved by 5,000+ creators</span></div></div>
+        <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="globe">✳</div><div class="floating-card card-top"><span class="mini-icon green">✓</span><div><strong>domainly.com</strong><small>Available to register</small></div><b>$14.99</b></div><div class="floating-card card-bottom"><span class="mini-icon purple">⚡</span><div><strong>Fast hosting</strong><small>99.9% uptime guaranteed</small></div><b>Ready</b></div></div>
+      </section>
+
+      <section class="search-section container" id="domains"><div class="section-label">01 / Find your name</div><div class="search-heading"><h2>A name that feels<br /><em>like you.</em></h2><p>Search over 400 domain extensions and make your mark online.</p></div><form class="domain-search" id="domainForm"><span class="search-icon">⌕</span><input id="domainInput" placeholder="Search for your next domain" autocomplete="off" /><button class="button" type="submit">Search domains <span>→</span></button></form><div class="search-results" id="searchResults"></div><div class="extension-row"><span>Popular extensions</span><b>.com</b><b>.co</b><b>.io</b><b>.shop</b><b>.studio</b><b>.xyz</b></div></section>
+
+      <section class="plans-section" id="plans"><div class="container"><div class="section-label">02 / Pick your power</div><div class="plans-heading"><div><h2>Everything you need<br />to <em>go live.</em></h2></div><div class="billing-toggle"><button class="active" data-billing="monthly">Monthly</button><button data-billing="yearly">Yearly <small>Save 20%</small></button></div></div><div class="plans-grid" id="plansGrid"></div></div></section>
+
+      <section class="why-section container" id="why"><div class="section-label">03 / The Domainly difference</div><div class="why-grid"><h2>Less tech stress.<br /><em>More making.</em></h2><div class="feature-list"><article><span>01</span><div><h3>Ridiculously easy</h3><p>No confusing dashboards or hidden settings. Just everything you need, right where you expect it.</p></div></article><article><span>02</span><div><h3>Fast by default</h3><p>Built on a global network so your site stays speedy for every visitor, everywhere.</p></div></article><article><span>03</span><div><h3>Human support</h3><p>Real people, real answers. We’re here whenever you need a hand getting unstuck.</p></div></article></div></div></section>
+      <section class="cta-section container" id="support"><div><span class="eyebrow">Ready when you are</span><h2>Your best idea<br /><em>starts with a name.</em></h2></div><a class="button button-light" href="#domains">Find your domain <span>↗</span></a></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><a class="brand" href="#top"><span class="brand-mark">D</span><span>domainly</span></a><div><h4>Product</h4><a href="#domains">Domains</a><a href="#plans">Hosting</a><a href="#plans">Pricing</a></div><div><h4>Company</h4><a href="#why">About us</a><a href="#support">Contact</a><a href="#support">Help center</a></div><div><h4>Stay in the loop</h4><p>Tips for building your corner of the internet.</p><div class="newsletter"><input placeholder="Your email address" /><button>→</button></div></div></div><div class="container footer-bottom"><span>© 2026 Domainly, Inc.</span><span>Made for the internet ✦</span></div></footer>
+    <aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2>Your bag</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-footer"><div><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button full" id="checkoutBtn">Continue to checkout <span>→</span></button><small>Secure checkout · Taxes calculated at checkout</small></div></aside><div class="overlay" id="overlay"></div><div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
