@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account — Domainly</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="account.css" />
+</head>
+<body class="account-body">
+  <main class="auth-shell">
+    <a class="brand auth-brand" href="index.html"><span class="brand-mark">D</span><span>domainly</span></a>
+    <section class="auth-card">
+      <div class="auth-intro"><span class="eyebrow">Your internet, organized</span><h1 id="authTitle">Welcome back.</h1><p id="authCopy">Log in to manage your domains, hosting, and billing in one place.</p></div>
+      <div class="auth-tabs"><button class="auth-tab active" data-mode="login">Log in</button><button class="auth-tab" data-mode="signup">Create account</button></div>
+      <form id="authForm">
+        <label id="nameField" class="hidden">Full name<input id="name" type="text" placeholder="Alex Morgan" /></label>
+        <label>Email address<input id="email" type="email" placeholder="you@example.com" required /></label>
+        <label>Password<input id="password" type="password" placeholder="At least 8 characters" required minlength="8" /></label>
+        <div class="form-row"><label class="checkbox"><input type="checkbox" /> Remember me</label><a href="#" id="forgot">Forgot password?</a></div>
+        <button class="button full" type="submit" id="authSubmit">Log in <span>→</span></button>
+      </form>
+      <p class="auth-note">By continuing, you agree to our Terms and Privacy Policy.</p>
+      <a class="back-link" href="index.html">← Back to Domainly</a>
+    </section>
+  </main>
+  <script src="account.js"></script>
+</body>
+</html>

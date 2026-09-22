@@ -1,0 +1,1 @@
+document.querySelectorAll('.side-nav a').forEach(link=>link.addEventListener('click',()=>document.querySelectorAll('.side-nav a').forEach(x=>x.classList.remove('active'))));document.querySelector('.signout').addEventListener('click',()=>localStorage.removeItem('domainly-user'));

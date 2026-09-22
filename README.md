@@ -1,6 +1,6 @@
 # Domainly — domain & hosting marketplace
 
-A polished frontend MVP for buying domains and hosting plans. This version runs as a static site with mock availability, cart state, and dashboard data stored in localStorage.
+A polished frontend MVP for buying domains and hosting plans.
 
 ## Run locally
 
@@ -14,14 +14,13 @@ Then visit http://localhost:8080.
 
 ## Included in this MVP
 
-- Responsive landing page
-- Domain search with mock availability results
-- Hosting plans and billing toggle
-- Cart drawer with domain and hosting items
-- Simulated checkout flow
-- Customer dashboard preview
-- Mobile navigation
-- LocalStorage cart persistence
+- Responsive marketing website and domain search with mock availability results
+- Hosting plans with monthly/yearly pricing
+- Cart with localStorage persistence
+- Sign-up and login experience at `auth.html`
+- Customer dashboard at `dashboard.html` with domains, hosting, billing, and activity views
+- Demo account flow that stores profile information in localStorage
+- Mobile responsive layouts
 
 ## Production next steps
 
